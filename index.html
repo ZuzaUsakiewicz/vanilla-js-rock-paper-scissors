@@ -3,17 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <button class="btn" id="paper">paper</button>
-    <button class="btn" id="scissors">scissors</button>
-    <button class="btn" id="rock">rock</button>
-    <div>
-      <h3>Score:</h3>
-      <p id="score"></p>
-      <p id="comp"></p>
+    <div class="container">
+      <h3>Click on one of those buttons:</h3>
+      <div class="buttons-container">
+        <button class="btn" id="paper">
+          <i class="far fa-hand-paper"></i>
+        </button>
+        <button class="btn" id="scissors">
+          <i class="far fa-hand-scissors"></i>
+        </button>
+        <button class="btn" id="rock"><i class="far fa-hand-rock"></i></button>
+      </div>
+      <div class="table">
+        <h3>Computer choose: <span id="comp"></span></h3>
+        <h3>Score: <span id="score"></span></h3>
+      </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

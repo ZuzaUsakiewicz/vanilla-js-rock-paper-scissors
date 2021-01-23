@@ -20,7 +20,7 @@ function gamePlay(e) {
   } else {
     let playerSelection = e.target.id;
     let computerSelection = computerRandom();
-    comp.innerHTML = `Comp choose: ${computerSelection} You choose: ${playerSelection}`;
+    comp.innerHTML = `${computerSelection}`;
     console.log(computerSelection);
     if (playerSelection === "scissors" && computerSelection === "rock") {
       computerScore++;
@@ -38,5 +38,5 @@ function gamePlay(e) {
       playerScore++;
     }
   }
-  scoreTable.innerHTML = `Computer: ${computerScore} You: ${playerScore}`;
+  scoreTable.innerHTML = `computer: ${computerScore} You: ${playerScore}`;
 }
